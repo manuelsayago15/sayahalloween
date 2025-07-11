@@ -1,4 +1,174 @@
-:root {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+header img {
+  width: 50%;
+  max-width: 100%;
+  padding-top: 1rem;
+}
+.progress-bar {
+  width: 100%;
+  height: 1.5rem;
+  border: 1px solid #E0E0E0;
+  background-color: #E0E0E0;
+}
+
+.section-phase-1 h1 {
+  font-weight: normal;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.section-phase-1 p {
+  font-style: italic;
+  padding: 1.3rem;
+  text-align: center;
+}
+
+.section-phase-1 div {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.next-button {
+  font-weight: 900;
+  background-color: #F5A623;
+  color: #ffffff;
+  width: 75%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+/* Mobile styles */
+
+
+
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .layout-container {
+    width: 70%;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .layout-container {
+    width: 70%;
+  }
+}
+
+/* Laptops */
+@media screen and (min-width: 769px) {
+   .layout-container {
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+  }
+
+  .sidebar {
+    width: 25%;
+    height: 100%;
+    text-align: left;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right: #d5dadf 1px solid;
+  }
+
+  .sidebar h1,
+  .sidebar p {
+    margin: 0.1rem 0;
+    font-size: 1rem;
+  }
+  
+  .layout-right {
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow-y: auto;
+  }
+
+  .layout-right h1 {
+    margin: 0 0 1rem;
+  }
+
+  .main-header {
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    border-bottom: #d5dadf 1px solid;
+    height: 45px;
+  }
+
+  /* BirdCard Component Styles */
+
+  .bird-card-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #d5dadf 1px solid;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+  }
+
+  .bird-card-image img {
+    width: 30%;
+    height: auto;
+    max-height: 200px;
+  }
+
+  .bird-card-languages {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bird-card-languages > div {
+    flex: 1;
+  }
+
+  .bird-card-notes > ul li div {
+    display: flex;
+  }
+  
+  .bird-card-notes > ul li div > div {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bird-card-notes > ul li div img {
+    width: 7%;
+    height: auto;
+    max-height: 130px;
+    margin: 0.5rem 1rem 0.5rem 0;
+    border-radius: 0.8rem;
+  }
+
+}
+
+/* @media screen and (min-width: 320px) {
+  header img {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 481px){
+  
+} */
+
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +235,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
