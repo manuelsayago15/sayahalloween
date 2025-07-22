@@ -25,10 +25,10 @@ header img {
   background-color: #E0E0E0;
 }
 
-/* .section-phase-1 div {
+.section-phase-1 div {
   text-align: center;
-  padding-bottom: 1rem;
-} */
+  /*padding-bottom: 1rem;*/
+}
 
 .survey-intro h1 {
   font-weight: normal;
@@ -43,11 +43,11 @@ header img {
 }
 
 .survey-intro p:nth-child(3){
-  padding-top: 0.5rem;
+  padding: 0 0 3rem 0;
 }
 
 .survey-input-phase-1 {
-  text-align: center;
+  /*text-align: center;*/
   padding-bottom: 2rem;
 }
 
@@ -56,6 +56,12 @@ header img {
   width: 220px;
   max-width: 230px;
   height: 2rem;
+  border-color: #000000;
+}
+
+.survey-input-phase-1 input::placeholder {
+  opacity: 0.5;
+  padding: 0 15px 0 15px;
 }
 
 .survey-input-phase-1 p:nth-child(2) {
@@ -89,6 +95,7 @@ input:focus {
   height: 2.5rem;
   border-radius: 0.5rem;
   border: none;
+  margin-bottom: 1rem;
 }
 
 footer {
