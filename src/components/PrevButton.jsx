@@ -1,7 +1,7 @@
 const PrevButton = () => {
     return (
         <div>
-            <button></button>
+            <button className="prev-button"></button>
         </div>
     )
 }

@@ -2,8 +2,8 @@
 
 const Name = () => {
     return (
-        <div>
-            <input id="name" className="name" type="text" placeholder="Nombre (opcional)" />
+        <div className="survey-input-phase-1">
+            <input id="name" className="name" type="text" placeholder="Drácula Hernández" maxLength={20}/>
         </div>
     )
 }
