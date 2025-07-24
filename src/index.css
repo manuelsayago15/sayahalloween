@@ -32,18 +32,21 @@ header img {
 
 .survey-intro h1 {
   font-weight: normal;
+  font-size: 20px;
   padding-top: 1rem;
   text-align: center;
 }
 
 .survey-intro p {
   font-style: italic;
+  font-size: 0.8rem;
   padding: 1.3rem;
   text-align: center;
 }
 
 .survey-intro p:nth-child(3){
-  padding: 0 0 3rem 0;
+  /* padding: 0 0 3rem 0; */
+  padding: 0.5rem 1.5rem 3rem 1.5rem;
 }
 
 .survey-input-phase-1 {
@@ -57,11 +60,13 @@ header img {
   max-width: 230px;
   height: 2rem;
   border-color: #000000;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .survey-input-phase-1 input::placeholder {
   opacity: 0.5;
-  padding: 0 15px 0 15px;
+  padding: 0 15px 0 0;
 }
 
 .survey-input-phase-1 p:nth-child(2) {
@@ -88,7 +93,8 @@ input:focus {
 /* ------------------------- */
 
 .next-button {
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 1rem;
   background-color: #F5A623;
   color: #ffffff;
   width: 75%;
@@ -100,25 +106,40 @@ input:focus {
 
 footer {
   padding: 1rem;
+  font-size: 12px;
 }
 
 /* Mobile styles */
 
-
-
-
-/* Mobile */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+/* @media screen and (min-width: 320px) and (max-width: 480px) {
   .layout-container {
     width: 70%;
   }
-}
+} */
 
 /* Tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .layout-container {
-    width: 70%;
+  .section-phase-1 div {
+    margin: 0 0.5rem 0 0.5rem;
   }
+
+  .survey-intro h1 {
+    font-size: 24px;
+  }
+
+  .survey-intro p {
+    font-size: 1.2rem;
+  }
+
+  .survey-input-phase-1 input {
+    width: 260px;
+    max-width: 280px;
+  }
+
+  .next-button {
+    font-size: 1.2rem;
+  }
+
 }
 
 /* Laptops */
