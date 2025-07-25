@@ -98,7 +98,7 @@ input:focus {
   background-color: #F5A623;
   color: #ffffff;
   width: 75%;
-  height: 2.5rem;
+  height: 3.5rem;
   border-radius: 0.5rem;
   border: none;
   margin-bottom: 1rem;
@@ -128,8 +128,12 @@ footer {
   }
 
   .survey-intro p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
+
+  .survey-intro p:nth-child(3){
+  padding: 0.5rem 4rem 3rem 4rem;
+}
 
   .survey-input-phase-1 input {
     width: 260px;
@@ -144,47 +148,25 @@ footer {
 
 /* Laptops */
 @media screen and (min-width: 769px) {
-   .layout-container {
-    flex-direction: row;
-    width: 80%;
-    height: 80%;
+  .survey-intro h1 {
+    font-size: 1.750rem;
+    padding-top: 3rem;
   }
 
-  .sidebar {
-    width: 25%;
-    height: 100%;
-    text-align: left;
-    padding: 1rem;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-right: #d5dadf 1px solid;
-  }
-
-  .sidebar h1,
-  .sidebar p {
-    margin: 0.1rem 0;
+  .survey-intro p {
     font-size: 1rem;
-  }
-  
-  .layout-right {
-    width: 75%;
-    height: 100%;
-    text-align: left;
-    padding: 1rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    overflow-y: auto;
+    padding: 1.5rem 0 0 0;
+    margin: 0 2rem 0 2rem;
   }
 
-  .layout-right h1 {
-    margin: 0 0 1rem;
+  .survey-input-phase-1 input {
+    width: 280px;
+    max-width: 300px;
   }
 
-  .main-header {
-    margin: 0 -1rem;
-    padding: 0 1rem;
-    border-bottom: #d5dadf 1px solid;
-    height: 45px;
+  .next-button {
+    font-size: 1.2rem;
+    width: 50%;
   }
 
   /* BirdCard Component Styles */

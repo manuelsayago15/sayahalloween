@@ -1,13 +1,12 @@
 //import React, { useState } from "react";
 import Name from './Name'
 import Email from './Email'
-import ProgressBar from '../ProgressBar'
 import NextButton from '../NextButton'
 
 const Phase1 = () => {
     return(
         <>
-            <ProgressBar></ProgressBar>
+            
             <section className='section-phase-1'>
                 <div className='survey-intro'>
                     <h1>Cuéntanos tu experiencia del SayaHalloween</h1>
