@@ -11,12 +11,16 @@ body {
 .header {
   width: 100%;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
 }
 
 header img {
-  width: 50%;
+  width: 35%;
   max-width: 100%;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 .progress-bar {
   width: 100%;
@@ -148,6 +152,10 @@ footer {
 
 /* Laptops */
 @media screen and (min-width: 769px) {
+  header img {
+    width: 25%;
+  }
+
   .survey-intro h1 {
     font-size: 1.750rem;
     padding-top: 3rem;
@@ -211,4 +219,22 @@ footer {
     border-radius: 0.8rem;
   }
 
+}
+
+@media screen and (min-width: 1024px) {
+  header img {
+    width: 18%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header img {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header img {
+    width: 12%;
+  }
 }
