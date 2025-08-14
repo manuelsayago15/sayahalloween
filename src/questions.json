@@ -1,0 +1,12 @@
+{
+    "questions": {
+        "first": "¿Cómo calificarías tu experiencia en el SayaHalloween 2024?",
+        "second": "¿Qué tan clara te pareció la información previa al evento?",
+        "third": "¿Cómo calificarías la selección de la música durante el evento?",
+        "fourth": "¿Cuál fue tu impresión de la decoración de la fiesta?",
+        "fifth": "¿Qué tal te parecieron las actividades y trivias de la fiesta?",
+        "sixth": "¿Cómo valorarías la variedad y calidad de las bebidas y pasapalos?",
+        "seventh": "¿Qué fue lo que más te gustó del evento y por qué?",
+        "eighth": "¿Qué fue lo que más te gustó del evento y por qué?"
+    }
+}
