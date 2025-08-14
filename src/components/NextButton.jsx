@@ -1,8 +1,12 @@
 const NextButton = () => {
+    const handleNextStep = () => {
+        console.log("You clicked")
+    }
+
     return (
-        <div>
-            <button className="next-button">Siguiente</button>
-        </div>
+        <>
+            <button className="next-button" onClick={handleNextStep}>Siguiente</button>
+        </>
     )
 }
 

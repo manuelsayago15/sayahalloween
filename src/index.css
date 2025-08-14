@@ -32,12 +32,12 @@ header img {
 
 .section-phase-1{
   flex: 1;
+  text-align: center;
 }
 
-.section-phase-1 div {
-  text-align: center;
-  /*padding-bottom: 1rem;*/
-}
+/* .section-phase-1 div {
+  padding-bottom: 1rem;
+} */
 
 .survey-intro h1 {
   font-weight: normal;
@@ -112,13 +112,15 @@ input:focus {
   border-radius: 0.5rem;
   border: none;
   margin-bottom: 1rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 footer {
   padding: 1rem;
   font-size: 0.5rem;
   margin-bottom: 2rem;
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 /* Mobile styles */
@@ -129,14 +131,22 @@ footer {
   }
 } */
 
-
+/* Xiaomi 13T Screen Size */
 @media screen and (min-width: 390px) and (max-width: 480px) {
   .survey-intro h1 {
     margin: 0 1rem 0 1rem;
   }
 
   .survey-intro p {
-    margin: auto 2rem;
+    margin: auto 2.3rem;
+  }
+
+  .survey-intro p:nth-child(3){
+    padding: 0.5rem 1.6rem 2rem 1.6rem;
+  }
+
+  .next-button {
+    margin-bottom: 3rem;
   }
 }
 
@@ -193,7 +203,7 @@ footer {
 
   .survey-intro h1 {
     font-size: 1.750rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
 
   .survey-intro p {
@@ -228,7 +238,7 @@ footer {
 
   .survey-intro h1 {
     font-size: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   .survey-intro p {
@@ -257,12 +267,12 @@ footer {
 
 @media screen and (min-width: 1200px) {
   header img {
-    width: 14%;
+    width: 10%;
   }
 
   .survey-intro h1 {
     font-size: 2.5rem;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
   }
 
   .survey-intro p {
@@ -279,19 +289,36 @@ footer {
 
 @media screen and (min-width: 1440px) {
    header img {
-    width: 12%;
+    width: 9%;
+  }
+
+  .survey-intro h1 {
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1920px) {
   header img {
-    width: 10%;
+    width: 8%;
+  }
+
+  footer {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 2560px) {
    header img {
-    width: 8%;
+    width: 6%;
+  }
+
+  .survey-intro h1 {
+    padding-top: 3rem;
+  }
+
+  footer {
+    margin-bottom: 0;
   }
 }
 

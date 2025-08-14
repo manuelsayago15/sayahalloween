@@ -2,11 +2,13 @@
 import Name from './Name'
 import Email from './Email'
 import NextButton from '../NextButton'
+import { useState } from 'react'
 
 const Phase1 = () => {
+    
+
     return(
         <>
-            
             <section className='section-phase-1'>
                 <div className='survey-intro'>
                     <h1>Cuéntanos tu experiencia del SayaHalloween</h1>
@@ -15,7 +17,7 @@ const Phase1 = () => {
                 </div>
                 <Name></Name>
                 <Email></Email>
-                <NextButton></NextButton>
+                {/* <NextButton></NextButton> */}
             </section>
         </>
     )
