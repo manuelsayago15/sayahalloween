@@ -313,16 +313,25 @@ footer {
     width: 6%;
   }
 
+  .survey-intro {
+    margin-bottom: 5rem;
+  }
+
+
   .survey-intro h1 {
     padding-top: 3rem;
   }
 
+  .next-button {
+    margin-top: 2rem;
+  }
+
   footer {
-    margin-bottom: 0;
+    margin-top: 5rem;
   }
 }
 
-@media screen and (min-height: 800px) {
+/* @media screen and (min-height: 800px) {
 
   .survey-intro {
     margin-bottom: 2rem;
@@ -331,15 +340,4 @@ footer {
   .next-button {
     margin-top: 2rem;
   }
-}
-
-@media screen and (min-height: 1400px) {
-
-  .survey-intro {
-    margin-bottom: 5rem;
-  }
-
-  .next-button {
-    margin-top: 8rem;
-  }
-}
+} */

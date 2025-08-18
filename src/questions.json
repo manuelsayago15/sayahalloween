@@ -1,12 +1,38 @@
 {
-    "questions": {
-        "first": "¿Cómo calificarías tu experiencia en el SayaHalloween 2024?",
-        "second": "¿Qué tan clara te pareció la información previa al evento?",
-        "third": "¿Cómo calificarías la selección de la música durante el evento?",
-        "fourth": "¿Cuál fue tu impresión de la decoración de la fiesta?",
-        "fifth": "¿Qué tal te parecieron las actividades y trivias de la fiesta?",
-        "sixth": "¿Cómo valorarías la variedad y calidad de las bebidas y pasapalos?",
-        "seventh": "¿Qué fue lo que más te gustó del evento y por qué?",
-        "eighth": "¿Qué fue lo que más te gustó del evento y por qué?"
-    }
+    "questions": [
+        {
+            "id": "q1",
+            "text": "¿Cómo calificarías tu experiencia en el SayaHalloween 2024?"
+        },
+        {
+            "id": "q2",
+            "text": "¿Qué tan clara te pareció la información previa al evento?"
+        },
+        {
+            "id": "q3",
+            "text": "¿Cómo calificarías la selección de la música durante el evento?"
+
+        },
+        {
+            "id": "q4",
+            "text": "¿Cuál fue tu impresión de la decoración de la fiesta?"
+        },
+        {
+            "id": "q5",
+            "text": "¿Qué tal te parecieron las actividades y trivias de la fiesta?"
+
+        },
+        {
+            "id": "q6",
+            "text": "¿Cómo valorarías la variedad y calidad de las bebidas y pasapalos?"
+        },
+        {
+            "id": "q7",
+            "seventh": "¿Qué fue lo que más te gustó del evento y por qué?"
+        },
+        {
+            "id": "q8",
+            "text": "¿Qué fue lo que más te gustó del evento y por qué?"
+        }
+    ]
 }
