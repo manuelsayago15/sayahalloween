@@ -1,6 +1,14 @@
+import { useFormStore } from "../store/useFormStore";
 const NextButton = () => {
+    const { showIntro, hideShowIntro, nextStep } = useFormStore();
+
+
     const handleNextStep = () => {
-        console.log("You clicked")
+        if (showIntro) {
+            hideShowIntro()
+        } else {
+            nextStep()
+        }
     }
 
     return (

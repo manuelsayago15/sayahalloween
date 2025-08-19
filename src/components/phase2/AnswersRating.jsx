@@ -1,41 +1,27 @@
 const AnswersRating = () => {
+  const ratings = Array.from({ length: 10 }, (_, i) => i + 1); // [1,2,3,...,10]
 
-    return (
-        <>
-            <div>
-                <input type="radio" id="rating-1" name="rating" value={1}/>
-                <label htmlFor="rating-1">1</label>
-            </div>
-            <div>
-                <input type="radio" id="rating-2" name="rating" value={7}/>
-                <label htmlFor="rating-2">2</label>
-            </div>
-            <div>
-                <input type="radio" id="rating-3" name="rating" value={3}/>
-                <label htmlFor="rating-3">3</label>
-            </div>
-            <div>
-                <input type="radio" id="rating-4" name="rating" value={4}/>
-                <label htmlFor="rating-4">4</label>
-            </div>
-            <div>
-                <input type="radio" id="rating-5" name="rating" value={5}/>
-                <label htmlFor="rating-5">5</label>
-            </div>
-            <div>
-                <input type="radio" id="rating-6" name="rating" value={6}/>
-                <label htmlFor="rating-6">6</label>
-            </div>
-            <div>
-                <input type="radio" id="rating-7" name="rating" value={7}/>
-                <label htmlFor="rating-7">7</label>
-            </div>
-            <div>
-                <input type="radio" id="rating-8" name="rating" value={8}/>
-                <label htmlFor="rating-8">8</label>
-            </div>
-        </>
-    )
-}
+  return (
+    <div className="rating">
+      {ratings.map((num) => (
+        <div key={num} style={{ textAlign: "center" }}>
+          <input
+            type="radio"
+            id={`rating-${num}`}
+            name="rating"
+            value={num}
+            className="rating-input"
+          />
+          <label
+            htmlFor={`rating-${num}`}
+            className="rating-label"
+          >
+            {num}
+          </label>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-export default AnswersRating
+export default AnswersRating;
