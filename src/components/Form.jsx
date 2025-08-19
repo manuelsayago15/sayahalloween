@@ -3,16 +3,30 @@ import Header from './Header'
 import Phase1 from './phase1/Phase1'
 import NextButton from './NextButton'
 import PrevButton from './PrevButton'
+import { useFormStore } from '../store/useFormStore'
+import { questions } from '../questions.json'
+import AnswersRating from './phase2/AnswersRating'
 
 const Form = () => {
     let title = 'Sayahalloween'
-    //const [currentStep, setCurrentStep] = useState(1)
-
+    const { currentStep, showIntro, nextStep, prevStep } = useFormStore();
+    const question = questions[currentStep]
+    console.log("currentStep " +  currentStep)
+    console.log(useFormStore())
+    console.log(showIntro)
 
     return (
         <>
             <Header title={title}></Header>
-            <Phase1></Phase1>
+            <section className='section-phase-1'> 
+                {showIntro && <Phase1></Phase1>}
+                {!showIntro && 
+                    <div className='survey-intro'>
+                        <h1>{question.text}</h1>
+                        <AnswersRating></AnswersRating>
+                    </div>
+                }
+            </section>
             <PrevButton></PrevButton>
             <NextButton></NextButton>
             <footer>Copyright © 2025</footer>
