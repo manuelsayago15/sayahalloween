@@ -8,7 +8,7 @@ export const useFormStore = create((set) => {
         nextStep: () => 
             set((state) => ({ 
                 currentStep: state.currentStep + 1,
-                question: state.question + 1 
+                //question: state.question + 1 
             })),
         
         prevStep: () => 
@@ -19,7 +19,7 @@ export const useFormStore = create((set) => {
             set((state) => ({
                 showIntro: state.showIntro = false
             })),
-        setAnswers: (step, value) =>
+        setAnswer: (step, value) =>
             set((state) => ({
                 answers: {
                     ...state.answers,
