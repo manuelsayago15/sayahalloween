@@ -4,6 +4,7 @@ export const useFormStore = create((set) => {
     return  {
         currentStep: 0,
         showIntro: true,
+        answers: {},
         nextStep: () => 
             set((state) => ({ 
                 currentStep: state.currentStep + 1,
@@ -17,6 +18,13 @@ export const useFormStore = create((set) => {
         hideShowIntro: () =>
             set((state) => ({
                 showIntro: state.showIntro = false
+            })),
+        setAnswers: (step, value) =>
+            set((state) => ({
+                answers: {
+                    ...state.answers,
+                    [step]: value
+                }
             }))
         
     }

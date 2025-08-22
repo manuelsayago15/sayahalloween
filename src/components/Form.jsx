@@ -23,7 +23,7 @@ const Form = () => {
                 {!showIntro && 
                     <div className='survey-intro'>
                         <h1>{question.text}</h1>
-                        <AnswersRating></AnswersRating>
+                        <AnswersRating step={currentStep}></AnswersRating>
                     </div>
                 }
             </section>
