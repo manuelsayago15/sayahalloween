@@ -1,13 +1,20 @@
 import { useFormStore } from '../../store/useFormStore'
 
 const AnswersRating = ( { step } ) => {
-  const { setAswers } = useFormStore();
+  const setAnswer = useFormStore((state) => state.setAnswer);
+  const answers = useFormStore((state) => state.answers);
+  const currentValue = answers[step] || null;
 
   const ratings = Array.from({ length: 10 }, (_, i) => i + 1); // [1,2,3,...,10]
-
+  
+  console.log("currentValue " + currentValue)
+  console.log("step " + step)
   const handleRating = (value) => {
-    setAswers(step, value)
+    console.log("chosen value " + value)
+    setAnswer(step, value)
   }
+
+  console.log("answer: " + answers[step])
   
   return (
     <div className="rating">
@@ -15,14 +22,15 @@ const AnswersRating = ( { step } ) => {
         <div key={num}>
           <input
             type="radio"
-            id={`rating-${num}`}
-            name="rating"
+            id={`rating-${step}-${num}`}
+            name={`rating-${step}`}
             value={num}
             className="rating-input"
-            onClick={() => handleRating(num)}
+            checked={currentValue === num}
+            onChange={() => handleRating(num)}
           />
           <label
-            htmlFor={`rating-${num}`}
+            htmlFor={`rating-${step}-${num}`}
             className="rating-label"
           >
             {num}
