@@ -1,4 +1,5 @@
 import { useFormStore } from '../../store/useFormStore'
+import TextAreaRating from './TextAreaRating';
 
 const AnswersRating = ( { step } ) => {
   const setAnswer = useFormStore((state) => state.setAnswer);
@@ -17,7 +18,7 @@ const AnswersRating = ( { step } ) => {
   console.log("answer: " + answers[step])
   
   return (
-    <div className="rating">
+    <><div className="rating">
       {ratings.map((num) => (
         <div key={num}>
           <input
@@ -27,8 +28,7 @@ const AnswersRating = ( { step } ) => {
             value={num}
             className="rating-input"
             checked={currentValue === num}
-            onChange={() => handleRating(num)}
-          />
+            onChange={() => handleRating(num)} />
           <label
             htmlFor={`rating-${step}-${num}`}
             className="rating-label"
@@ -37,7 +37,7 @@ const AnswersRating = ( { step } ) => {
           </label>
         </div>
       ))}
-    </div>
+    </div><TextAreaRating /></>
   );
 };
 

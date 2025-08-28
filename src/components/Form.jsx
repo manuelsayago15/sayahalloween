@@ -9,11 +9,12 @@ import AnswersRating from './phase2/AnswersRating'
 
 const Form = () => {
     let title = 'Sayahalloween'
-    const { currentStep, showIntro, nextStep, prevStep } = useFormStore();
+    const { currentStep, showIntro, nextStep, prevStep, answers } = useFormStore();
     const question = questions[currentStep]
     console.log("currentStep " +  currentStep)
     console.log(useFormStore())
     console.log(showIntro)
+    console.log('answers ' + answers[currentStep])
 
     return (
         <>

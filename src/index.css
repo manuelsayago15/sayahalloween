@@ -178,6 +178,11 @@ input[type="radio"]:checked + label {
   .next-button {
     margin-bottom: 3rem;
   }
+
+  .rating {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -185,12 +190,18 @@ input[type="radio"]:checked + label {
     width: 25%;
   }
 
+  .section-phase-1 {
+    margin-bottom: 3rem;
+  }
+
   .section-phase-1 div {
-    margin: 0 0.5rem 0 0.5rem;
+    /* margin: 0 0.5rem 0 0.5rem; */
   }
 
   .survey-intro h1 {
     font-size: 1.5rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
   }
 
   .survey-intro p {
@@ -217,10 +228,20 @@ input[type="radio"]:checked + label {
 
   .next-button {
     font-size: 1.2rem;
+    margin-bottom: 6rem;
   }
 
   footer {
     font-size: 0.8rem;
+  }
+
+  .rating {
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  .rating-label {
+    width: 45px;
   }
 
 }
@@ -231,9 +252,15 @@ input[type="radio"]:checked + label {
     width: 20%;
   }
 
+  .section-phase-1 {
+    margin-bottom: 3rem;
+  }
+
   .survey-intro h1 {
     font-size: 1.750rem;
     padding-top: 1.5rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
   }
 
   .survey-intro p {
@@ -254,10 +281,21 @@ input[type="radio"]:checked + label {
   .next-button {
     font-size: 1.2rem;
     width: 50%;
+    margin-bottom: 5rem;
   }
 
   footer {
     font-size: 1rem;
+  }
+
+  .rating {
+    margin-top: 6rem;
+  }
+
+  .rating-label {
+    width: 65px;
+    height: 65px;
+    line-height: 60px;
   }
 }
 
@@ -293,6 +331,16 @@ input[type="radio"]:checked + label {
   .survey-input-phase-1 p:nth-child(2) {
     font-size: 0.85rem;
   }
+
+  .rating {
+    margin-top: 7rem;
+  }
+
+  .rating-label {
+    width: 80px;
+    height: 80px;
+    line-height: 75px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -314,6 +362,10 @@ input[type="radio"]:checked + label {
   .survey-input-phase-1 input {
     width: 450px;
     max-width: 500px;
+  }
+
+  .rating {
+    margin-top: 8rem;
   }
 }
 
@@ -358,6 +410,16 @@ input[type="radio"]:checked + label {
 
   footer {
     margin-top: 5rem;
+  }
+
+  .rating {
+    margin-top: 12rem;
+  }
+
+  .rating-label {
+    width: 100px;
+    height: 100px;
+    line-height: 95px;
   }
 }
 
