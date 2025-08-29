@@ -18,26 +18,33 @@ const AnswersRating = ( { step } ) => {
   console.log("answer: " + answers[step])
   
   return (
-    <><div className="rating">
-      {ratings.map((num) => (
-        <div key={num}>
-          <input
-            type="radio"
-            id={`rating-${step}-${num}`}
-            name={`rating-${step}`}
-            value={num}
-            className="rating-input"
-            checked={currentValue === num}
-            onChange={() => handleRating(num)} />
-          <label
-            htmlFor={`rating-${step}-${num}`}
-            className="rating-label"
-          >
-            {num}
-          </label>
+    <>
+      <div className='rating'>
+        {ratings.map((num) => (
+          <div key={num}>
+            <input
+              type="radio"
+              id={`rating-${step}-${num}`}
+              name={`rating-${step}`}
+              value={num}
+              className="rating-input"
+              checked={currentValue === num}
+              onChange={() => handleRating(num)} />
+            <label
+              htmlFor={`rating-${step}-${num}`}
+              className="rating-label"
+            >
+              {num}
+            </label>
+          </div>
+        ))}
+      </div>
+      { (currentValue !== null && currentValue <= 6) && (
+        <div className='textArea'>
+          <TextAreaRating />
         </div>
-      ))}
-    </div><TextAreaRating /></>
+      )}
+    </>
   );
 };
 

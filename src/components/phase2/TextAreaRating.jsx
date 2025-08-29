@@ -1,11 +1,11 @@
 const TextAreaRating = () => {
     return (
         <>
-            <label htmlFor="myTextArea"></label>
+            <label htmlFor="myTextArea">¿Por qué calificas con esa nota?</label>
             <textarea
                 id="myTextArea"
-               
-                placeholder="Type your message here..." // Optional: placeholder text
+                name="test"
+                placeholder="Danos tu opinión..."
             />
         </>
     )

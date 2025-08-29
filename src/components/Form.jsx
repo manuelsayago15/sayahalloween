@@ -2,14 +2,14 @@
 import Header from './Header'
 import Phase1 from './phase1/Phase1'
 import NextButton from './NextButton'
-import PrevButton from './PrevButton'
+// import PrevButton from './PrevButton'
 import { useFormStore } from '../store/useFormStore'
 import { questions } from '../questions.json'
 import AnswersRating from './phase2/AnswersRating'
 
 const Form = () => {
     let title = 'Sayahalloween'
-    const { currentStep, showIntro, nextStep, prevStep, answers } = useFormStore();
+    const { currentStep, showIntro, answers } = useFormStore();
     const question = questions[currentStep]
     console.log("currentStep " +  currentStep)
     console.log(useFormStore())
@@ -28,7 +28,6 @@ const Form = () => {
                     </div>
                 }
             </section>
-            <PrevButton></PrevButton>
             <NextButton></NextButton>
             <footer>Copyright © 2025</footer>
         </>
