@@ -16,15 +16,20 @@ const Form = () => {
     console.log(showIntro)
     console.log('answers ' + answers[currentStep])
 
+    const totalSteps = questions.length
+
+    const progressBar = showIntro ? 0 : ((currentStep + 1) / totalSteps ) * 100
+    console.log(progressBar)
+
     return (
         <>
-            <Header title={title}></Header>
+            <Header title={title} progressBar={progressBar}></Header>
             <section className='section-phase-1'> 
                 {showIntro && <Phase1></Phase1>}
                 {!showIntro && 
                     <div className='survey-intro'>
                         <h1>{question.text}</h1>
-                        <AnswersRating step={currentStep}></AnswersRating>
+                        <AnswersRating questionId={question.id}></AnswersRating>
                     </div>
                 }
             </section>

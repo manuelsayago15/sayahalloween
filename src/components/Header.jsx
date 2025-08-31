@@ -2,14 +2,14 @@
 import logo from "../assets/images/logo.png";
 import ProgressBar from "./ProgressBar";
  
-const Header = () => {
+const Header = ({ progressBar }) => {
     return (
         <>
             <header className="header">
                 <div>
                     <img src={logo} alt="Sayahalloween" />
                 </div>
-                <ProgressBar></ProgressBar>
+                <ProgressBar progress={progressBar}></ProgressBar>
             </header>
 
         </>
