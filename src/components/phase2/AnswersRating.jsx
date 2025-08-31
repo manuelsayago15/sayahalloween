@@ -1,21 +1,21 @@
 import { useFormStore } from '../../store/useFormStore'
 import TextAreaRating from './TextAreaRating';
 
-const AnswersRating = ( { step } ) => {
-  const setAnswer = useFormStore((state) => state.setAnswer);
-  const answers = useFormStore((state) => state.answers);
-  const currentValue = answers[step] || null;
+const AnswersRating = ( { questionId } ) => {
+  const setAnswer = useFormStore((state) => state.setAnswer)
+  const answers = useFormStore((state) => state.answers)
+  const currentValue = answers[questionId]?.rating || null
 
   const ratings = Array.from({ length: 10 }, (_, i) => i + 1); // [1,2,3,...,10]
   
   console.log("currentValue " + currentValue)
-  console.log("step " + step)
+  console.log("questionId " + questionId)
   const handleRating = (value) => {
     console.log("chosen value " + value)
-    setAnswer(step, value)
+    setAnswer(questionId, { rating: value })
   }
 
-  console.log("answer: " + answers[step])
+  console.log("answer rating: " + answers[questionId]?.rating)
   
   return (
     <>
@@ -24,14 +24,14 @@ const AnswersRating = ( { step } ) => {
           <div key={num}>
             <input
               type="radio"
-              id={`rating-${step}-${num}`}
-              name={`rating-${step}`}
+              id={`rating-${questionId}-${num}`}
+              name={`rating-${questionId}`}
               value={num}
               className="rating-input"
               checked={currentValue === num}
               onChange={() => handleRating(num)} />
             <label
-              htmlFor={`rating-${step}-${num}`}
+              htmlFor={`rating-${questionId}-${num}`}
               className="rating-label"
             >
               {num}
@@ -41,7 +41,7 @@ const AnswersRating = ( { step } ) => {
       </div>
       { (currentValue !== null && currentValue <= 6) && (
         <div className='textArea'>
-          <TextAreaRating />
+          <TextAreaRating questionId={questionId} />
         </div>
       )}
     </>

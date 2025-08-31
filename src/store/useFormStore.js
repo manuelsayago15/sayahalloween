@@ -19,11 +19,14 @@ export const useFormStore = create((set) => {
             set((state) => ({
                 showIntro: state.showIntro = false
             })),
-        setAnswer: (step, value) =>
+        setAnswer: (questionId, value) =>
             set((state) => ({
                 answers: {
                     ...state.answers,
-                    [step]: value
+                    [questionId]: {
+                        ...state.answers[questionId],
+                        ...value
+                    }
                 }
             }))
         

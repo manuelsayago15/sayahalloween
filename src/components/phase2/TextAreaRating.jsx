@@ -1,11 +1,25 @@
-const TextAreaRating = () => {
+import { useFormStore } from "../../store/useFormStore"
+
+const TextAreaRating = ({ questionId }) => {
+    const setAnswer = useFormStore((state) => state.setAnswer)
+    const answers = useFormStore((state) => state.answers)
+
+    const currentText = answers[questionId]?.text || ''
+
+    const handleChange = (e) => {
+        const value = e.target.value;
+        setAnswer(questionId, { text: value });
+    }
+
     return (
         <>
-            <label htmlFor="myTextArea">¿Por qué calificas con esa nota?</label>
+            <label htmlFor={`textarea-${questionId}`}>¿Por qué calificas con esa nota?</label>
             <textarea
-                id="myTextArea"
-                name="test"
+                id={`textarea-${questionId}`}
+                name={`textarea-${questionId}`}
                 placeholder="Danos tu opinión..."
+                value={currentText}
+                onChange={handleChange}
             />
         </>
     )
