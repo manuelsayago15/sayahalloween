@@ -1,4 +1,4 @@
-import { useFormStore } from "../../store/useFormStore"
+import { useFormStore } from "../store/useFormStore"
 
 const TextAreaRating = ({ questionId }) => {
     const setAnswer = useFormStore((state) => state.setAnswer)

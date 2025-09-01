@@ -1,5 +1,5 @@
 //import React, { useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../../../assets/images/logo.png";
 import ProgressBar from "./ProgressBar";
  
 const Header = ({ progressBar }) => {

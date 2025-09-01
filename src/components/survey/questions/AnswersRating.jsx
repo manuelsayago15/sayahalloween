@@ -1,4 +1,4 @@
-import { useFormStore } from '../../store/useFormStore'
+import { useFormStore } from '../store/useFormStore'
 import TextAreaRating from './TextAreaRating';
 
 const AnswersRating = ( { questionId } ) => {
@@ -23,16 +23,16 @@ const AnswersRating = ( { questionId } ) => {
         {ratings.map((num) => (
           <div key={num}>
             <input
-              type="radio"
+              type='radio'
               id={`rating-${questionId}-${num}`}
               name={`rating-${questionId}`}
               value={num}
-              className="rating-input"
+              className='rating-input'
               checked={currentValue === num}
               onChange={() => handleRating(num)} />
             <label
               htmlFor={`rating-${questionId}-${num}`}
-              className="rating-label"
+              className='rating-label'
             >
               {num}
             </label>

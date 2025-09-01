@@ -8,7 +8,6 @@ export const useFormStore = create((set) => {
         nextStep: () => 
             set((state) => ({ 
                 currentStep: state.currentStep + 1,
-                //question: state.question + 1 
             })),
         
         prevStep: () => 
