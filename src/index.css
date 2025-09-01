@@ -78,6 +78,7 @@ header img {
   border-color: #000000;
   padding-left: 10px;
   padding-right: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .survey-input-phase-1 input::placeholder {
@@ -121,6 +122,10 @@ input:focus {
   margin-bottom: 1rem;
   cursor: pointer;
   text-decoration: none;
+}
+
+.disabled-button {
+  background-color: #E0E0E0;
 }
 
 footer {
@@ -186,7 +191,7 @@ textarea {
 .textArea textarea::placeholder {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
-  padding: 0.2rem 0 0 0.5rem
+  padding: 0.2rem 0 0 0.2rem
 }
 
 /* Mobile styles */
