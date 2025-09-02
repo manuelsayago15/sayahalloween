@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Name from './Name'
 import Email from './Email'
 
-const Phase1 = () => {
+const Intro = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: ''
@@ -27,4 +27,4 @@ const Phase1 = () => {
     )
 }
 
-export default Phase1
+export default Intro

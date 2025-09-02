@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useFormStore } from '../store/useFormStore'
 
 const Email = ({ value, onChange }) => {
+    const setInputError = useFormStore((state) => state.setInputError)
     const [error, setError] = useState('')
 
     const validateEmail = (value) => {
@@ -14,8 +16,10 @@ const Email = ({ value, onChange }) => {
 
         if (inputValue.length > 0 && !validateEmail(inputValue)) {
             setError('Por favor ingresa un correo válido')
+            setInputError(true)
         } else {
             setError('')
+            setInputError(false)
         }
     }
 

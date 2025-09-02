@@ -1,10 +1,11 @@
 import Header from './header/Header'
-import Phase1 from './intro/Intro'
+import Intro from './intro/Intro'
 import NextButton from './NextButton'
 import { useFormStore } from './store/useFormStore'
 import { questions } from '../../data/questions.json'
 import AnswersRating from './questions/AnswersRating'
 import TextAreaRating from './questions/TextAreaRating'
+import SendSurvey from './sendSurvey'
 
 const Form = () => {
     let title = 'Sayahalloween'
@@ -20,29 +21,37 @@ const Form = () => {
     const progressBar = showIntro ? 0 : ((currentStep + 1) / totalSteps ) * 100
     console.log(progressBar)
     
-    const isLastStep = currentStep >= totalSteps
-    console.log('isLastStep ', + isLastStep)
+    // const isLastStep = currentStep >= totalSteps
+    // console.log('isLastStep ', + isLastStep)
+
+    const islastQuestion = currentStep === totalSteps - 1
+    console.log('islastQuestion ', + islastQuestion)
     
-    const question = isLastStep < 1 ? questions[currentStep] : null
-    console.log('question ', + question)
+    const question = questions[currentStep]
+    console.log('question ', questions[currentStep].text)
 
     return (
         <>
             <Header title={title} progressBar={progressBar}></Header>
             <section className='section-phase-1'> 
-                {showIntro && <Phase1></Phase1>}
-                {!showIntro && !isLastStep && (
+                {showIntro && <Intro />}
+                {!showIntro && (
                     <>
                         <div className='survey-intro'>
                             <h1>{question.text}</h1>
-                            <AnswersRating questionId={question.id}></AnswersRating>
+                            { !islastQuestion && <AnswersRating questionId={question.id}></AnswersRating> }
                         </div>
                     </>
                 )}
 
-                { !showIntro && isLastStep && <TextAreaRating /> }
+                { !showIntro && islastQuestion && (
+                    <div className='textArea' style={{ marginTop: '3rem' }}>
+                        <TextAreaRating questionId={question.id} islastQuestion={islastQuestion} /> 
+                    </div>
+                )}
             </section>
-            <NextButton questionId={question.id}></NextButton>
+           { !islastQuestion && <NextButton questionId={question.id}></NextButton> }
+           { !showIntro && islastQuestion && <SendSurvey /> }
             <footer>Copyright © 2025</footer>
         </>
     )
