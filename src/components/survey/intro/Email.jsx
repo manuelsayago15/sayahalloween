@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useFormStore } from '../store/useFormStore'
 
-const Email = ({ value, onChange }) => {
-    const setInputError = useFormStore((state) => state.setInputError)
+const Email = () => {
+    //const setInputError = useFormStore((state) => state.setInputError)
+    const { userInfo, setUserInfo, setInputError } = useFormStore()
     const [error, setError] = useState('')
 
     const validateEmail = (value) => {
@@ -12,7 +13,7 @@ const Email = ({ value, onChange }) => {
 
     const handleChange = (e) => {
         const inputValue = e.target.value
-        onChange(inputValue)
+        setUserInfo('email', inputValue)
 
         if (inputValue.length > 0 && !validateEmail(inputValue)) {
             setError('Por favor ingresa un correo válido')
@@ -29,7 +30,7 @@ const Email = ({ value, onChange }) => {
                 id='email' 
                 type='text' 
                 placeholder='sayahalloween@gmail.com' 
-                value={value}
+                value={userInfo.email}
                 onChange={handleChange}
             />
             <p>Deja tu correo si deseas recibir noticias de los próximos eventos.</p>
