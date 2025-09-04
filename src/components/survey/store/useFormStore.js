@@ -5,10 +5,21 @@ export const useFormStore = create((set) => {
         currentStep: 0,
         showIntro: true,
         answers: {},
+        userInfo: {
+            name: '',
+            email: ''
+        },
         inputError: false,
         isSubmmited: false,
         setInputError: (value) => set(() => ({ inputError: value })),
         setisSubmmited: (value) => set(() => ({ isSubmmited: value })),
+        setUserInfo: (key, value) => 
+            set((state) => ({
+                userInfo: {
+                    ...state.userInfo, 
+                    [key]: value,
+                }
+            })),
         nextStep: () => 
             set((state) => ({ 
                 currentStep: state.currentStep + 1,

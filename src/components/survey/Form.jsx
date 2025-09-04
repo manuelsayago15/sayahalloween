@@ -6,10 +6,11 @@ import { questions } from '../../data/questions.json'
 import AnswersRating from './questions/AnswersRating'
 import TextAreaRating from './questions/TextAreaRating'
 import SendSurvey from './sendSurvey'
+import Farewell from './Farewell'
 
 const Form = () => {
     let title = 'Sayahalloween'
-    const { currentStep, showIntro, answers } = useFormStore();
+    const { currentStep, showIntro, answers, isSubmmited } = useFormStore();
     console.log('currentStep ' +  currentStep)
     console.log(useFormStore())
     console.log(showIntro)
@@ -35,7 +36,7 @@ const Form = () => {
             <Header title={title} progressBar={progressBar}></Header>
             <section className='section-phase-1'> 
                 {showIntro && <Intro />}
-                {!showIntro && (
+                {!showIntro && !isSubmmited && (
                     <>
                         <div className='survey-intro'>
                             <h1>{question.text}</h1>
@@ -44,14 +45,18 @@ const Form = () => {
                     </>
                 )}
 
-                { !showIntro && islastQuestion && (
+                { !showIntro && islastQuestion && !isSubmmited && (
                     <div className='textArea' style={{ marginTop: '3rem' }}>
                         <TextAreaRating questionId={question.id} islastQuestion={islastQuestion} /> 
                     </div>
                 )}
+
+                { !showIntro && islastQuestion && isSubmmited && (
+                    <Farewell /> 
+                )}
             </section>
            { !islastQuestion && <NextButton questionId={question.id}></NextButton> }
-           { !showIntro && islastQuestion && <SendSurvey /> }
+           { !showIntro && islastQuestion && !isSubmmited && <SendSurvey /> }
             <footer>Copyright © 2025</footer>
         </>
     )
