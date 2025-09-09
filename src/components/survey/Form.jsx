@@ -10,7 +10,7 @@ import Farewell from './Farewell'
 
 const Form = () => {
     let title = 'Sayahalloween'
-    const { currentStep, showIntro, answers, isSubmmited } = useFormStore();
+    const { currentStep, showIntro, answers, isSubmmited, userInfo } = useFormStore();
     console.log('currentStep ' +  currentStep)
     console.log(useFormStore())
     console.log(showIntro)
@@ -31,16 +31,20 @@ const Form = () => {
     const question = questions[currentStep]
     console.log('question ', questions[currentStep].text)
 
+        console.log("userInfo:", userInfo)
+        console.log("answers:", answers)
+        console.log("isSubmmited:", isSubmmited)
+
     return (
         <>
-            <Header title={title} progressBar={progressBar}></Header>
-            <section className='section-phase-1'> 
+            <Header title={title} progressBar={progressBar} />
+            <section className={ isSubmmited ? 'farewell-container' : 'section-phase-1' }> 
                 {showIntro && <Intro />}
                 {!showIntro && !isSubmmited && (
                     <>
                         <div className='survey-intro'>
                             <h1>{question.text}</h1>
-                            { !islastQuestion && <AnswersRating questionId={question.id}></AnswersRating> }
+                            { !islastQuestion && <AnswersRating questionId={question.id} /> }
                         </div>
                     </>
                 )}
@@ -50,12 +54,12 @@ const Form = () => {
                         <TextAreaRating questionId={question.id} islastQuestion={islastQuestion} /> 
                     </div>
                 )}
-
                 { !showIntro && islastQuestion && isSubmmited && (
-                    <Farewell /> 
+                    <Farewell />  
                 )}
+
             </section>
-           { !islastQuestion && <NextButton questionId={question.id}></NextButton> }
+           { !islastQuestion && <NextButton questionId={question.id} /> }
            { !showIntro && islastQuestion && !isSubmmited && <SendSurvey /> }
             <footer>Copyright © 2025</footer>
         </>
