@@ -5,7 +5,7 @@ const Name = () => {
     //const setInputError = useFormStore((state) => state.setInputError)
     //const inputError = useFormStore((state) => state.inputError)
     //console.log('inputError ', inputError)
-    const { userInfo, setUserInfo, setInputError } = useFormStore()
+    const { userInfo, setUserInfo, setNameInputError } = useFormStore()
     const [error, SetError] = useState('')
 
     const handleChange = (e) => {
@@ -14,10 +14,10 @@ const Name = () => {
 
         if (inputValue.length > 0 && inputValue.length < 3) {
             SetError('El nombre debe tener al menos 3 caracteres.')
-            setInputError(true)
+            setNameInputError(true)
         } else {
             SetError('')
-            setInputError(false)
+            setNameInputError(false)
         }
     }
 

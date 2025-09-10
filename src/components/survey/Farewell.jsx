@@ -1,17 +1,23 @@
 import { useState, useEffect } from "react";
 
 const Farewell = () => {
-    const avatars = [
-        "/images/bat.png",
-        "/images/spider.png",
-        "/images/pumpkin.png",
-        "/images/skull.png",
-        "/images/witch.png",
-    ]
-
     const [elements, setElements] = useState([]);
     
     useEffect(() => {
+
+        const avatars = [
+            "/images/bat.png",
+            "/images/spider.png",
+            "/images/pumpkin.png",
+            "/images/skull.png",
+            "/images/witch.png",
+        ]
+
+        // avatars.forEach((src) => {
+        //     const img = new Image()
+        //     img.src = src
+        // })
+
         const interval = setInterval(() => {
         setElements((prev) => [
             ...prev,
@@ -20,12 +26,14 @@ const Farewell = () => {
             src: avatars[Math.floor(Math.random() * avatars.length)],
             left: Math.random() * 100,
             size: 40 + Math.random() * 60,
-            duration: 3 + Math.random() * 2, 
+            duration: 4 + Math.random() * 3, 
             },
         ]);
-        }, 200);
+        }, 100);
 
         setTimeout(() => clearInterval(interval), 8000);
+
+        return () => clearInterval(interval);
     }, []);
 
     return (

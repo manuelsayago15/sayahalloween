@@ -1,11 +1,16 @@
 import './App.css'
-import Form from './components/survey/Form'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Home from './pages/Home'
+import Survey from './pages/Survey'
 
 function App() {
   return (
-    <div className='container'>
-      <Form />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/survey" element={<Survey />} />
+      </Routes>
+    </Router>
   )
 }
 

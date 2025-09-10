@@ -8,14 +8,14 @@ const AnswersRating = ( { questionId } ) => {
 
   const ratings = Array.from({ length: 10 }, (_, i) => i + 1); // [1,2,3,...,10]
   
-  console.log("currentValue " + currentValue)
-  console.log("questionId " + questionId)
+  // console.log("currentValue " + currentValue)
+  // console.log("questionId " + questionId)
   const handleRating = (value) => {
-    console.log("chosen value " + value)
+    // console.log("chosen value " + value)
     setAnswer(questionId, { rating: value })
   }
 
-  console.log("answer rating: " + answers[questionId]?.rating)
+  // console.log("answer rating: " + answers[questionId]?.rating)
   
   return (
     <>

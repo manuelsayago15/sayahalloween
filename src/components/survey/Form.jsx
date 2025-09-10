@@ -11,29 +11,29 @@ import Farewell from './Farewell'
 const Form = () => {
     let title = 'Sayahalloween'
     const { currentStep, showIntro, answers, isSubmmited, userInfo } = useFormStore();
-    console.log('currentStep ' +  currentStep)
-    console.log(useFormStore())
-    console.log(showIntro)
-    console.log('answers ' + answers[currentStep])
+    // console.log('currentStep ' +  currentStep)
+    // console.log(useFormStore())
+    // console.log(showIntro)
+    // console.log('answers ' + answers[currentStep])
     
     const totalSteps = questions.length
-    console.log('totalSteps ', totalSteps)
+    // console.log('totalSteps ', totalSteps)
     
     const progressBar = showIntro ? 0 : ((currentStep + 1) / totalSteps ) * 100
-    console.log(progressBar)
+    // console.log(progressBar)
     
     // const isLastStep = currentStep >= totalSteps
     // console.log('isLastStep ', + isLastStep)
 
     const islastQuestion = currentStep === totalSteps - 1
-    console.log('islastQuestion ', + islastQuestion)
+    // console.log('islastQuestion ', + islastQuestion)
     
     const question = questions[currentStep]
-    console.log('question ', questions[currentStep].text)
+    // console.log('question ', questions[currentStep].text)
 
-        console.log("userInfo:", userInfo)
-        console.log("answers:", answers)
-        console.log("isSubmmited:", isSubmmited)
+        // console.log("userInfo:", userInfo)
+        // console.log("answers:", answers)
+        // console.log("isSubmmited:", isSubmmited)
 
     return (
         <>
