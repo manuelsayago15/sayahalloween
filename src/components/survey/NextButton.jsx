@@ -2,11 +2,13 @@ import { useFormStore } from "./store/useFormStore";
 const NextButton = ({ questionId }) => {
     const { showIntro, hideShowIntro, nextStep } = useFormStore();
     const answers = useFormStore((state) => state.answers)
-    const inputError = useFormStore((state) => state.inputError)
-    console.log('inputError ', inputError)
+    const emailInputError = useFormStore((state) => state.emailInputError)
+    const nameInputError = useFormStore((state) => state.nameInputError)
+    // console.log('nameInputError ', nameInputError)
+    // console.log('emailInputError ', emailInputError)
     const currentValue = answers[questionId]?.rating || null
 
-    const isDisabled = (!showIntro && currentValue === null || inputError)
+    const isDisabled = (!showIntro && currentValue === null || emailInputError || nameInputError)
 
     const handleNextStep = () => {
         if (showIntro) {

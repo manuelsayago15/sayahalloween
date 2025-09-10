@@ -3,7 +3,7 @@ import { useFormStore } from '../store/useFormStore'
 
 const Email = () => {
     //const setInputError = useFormStore((state) => state.setInputError)
-    const { userInfo, setUserInfo, setInputError } = useFormStore()
+    const { userInfo, setUserInfo, setEmailInputError } = useFormStore()
     const [error, setError] = useState('')
 
     const validateEmail = (value) => {
@@ -17,10 +17,10 @@ const Email = () => {
 
         if (inputValue.length > 0 && !validateEmail(inputValue)) {
             setError('Por favor ingresa un correo válido')
-            setInputError(true)
+            setEmailInputError(true)
         } else {
             setError('')
-            setInputError(false)
+            setEmailInputError(false)
         }
     }
 

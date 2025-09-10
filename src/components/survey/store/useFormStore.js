@@ -9,9 +9,11 @@ export const useFormStore = create((set) => {
             name: '',
             email: ''
         },
-        inputError: false,
+        emailInputError: false,
+        nameInputError: false,
         isSubmmited: false,
-        setInputError: (value) => set(() => ({ inputError: value })),
+        setEmailInputError: (value) => set(() => ({ emailInputError: value })),
+        setNameInputError: (value) => set(() => ({ nameInputError: value })),
         setisSubmmited: (value) => set(() => ({ isSubmmited: value })),
         setUserInfo: (key, value) => 
             set((state) => ({

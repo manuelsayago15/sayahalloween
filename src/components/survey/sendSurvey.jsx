@@ -10,7 +10,7 @@ const SendSurvey = () => {
 
     const handleSurvey = async () => {
         setLoading(true)
-        console.log('loading ', loading)
+        // console.log('loading ', loading)
         try {
 
             const filteredUserInfo = Object.fromEntries(
