@@ -21,7 +21,7 @@ const NextButton = ({ questionId }) => {
     return (
         <>
             <button 
-                className={isDisabled ? 'disabled-button next-button' : 'next-button'}
+                className={isDisabled ? 'disabled-button button' : 'button'}
                 onClick={handleNextStep}
                 disabled={isDisabled}
             >

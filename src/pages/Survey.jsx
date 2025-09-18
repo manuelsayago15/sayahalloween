@@ -1,3 +1,4 @@
+import './Survey.css'
 import Form from '../components/survey/Form'
 
 const Survey = () => {

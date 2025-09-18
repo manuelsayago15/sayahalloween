@@ -37,7 +37,7 @@ const SendSurvey = () => {
         <>
             { loading && <LoadingScreen /> }
             <button 
-                className='next-button'
+                className='button'
                 onClick={handleSurvey}
                 disabled={loading}
             >

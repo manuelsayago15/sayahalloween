@@ -55,13 +55,13 @@ const Form = () => {
                     </div>
                 )}
                 { !showIntro && islastQuestion && isSubmmited && (
-                    <Farewell />  
+                    <Farewell />
                 )}
 
             </section>
            { !islastQuestion && <NextButton questionId={question.id} /> }
            { !showIntro && islastQuestion && !isSubmmited && <SendSurvey /> }
-            <footer>Copyright © 2025</footer>
+            <footer>© 2025 SayaHalloween. Todos los derechos reservados.</footer>
         </>
     )
 }
