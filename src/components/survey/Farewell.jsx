@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Farewell = () => {
     const [elements, setElements] = useState([]);
+    const [showButton, setShowButton] = useState(false); 
     
     useEffect(() => {
 
@@ -31,7 +33,10 @@ const Farewell = () => {
         ]);
         }, 100);
 
-        setTimeout(() => clearInterval(interval), 8000);
+        setTimeout(() => {
+            clearInterval(interval);
+            setTimeout(() => setShowButton(true), 1000);
+        }, 5000);
 
         return () => clearInterval(interval);
     }, []);
@@ -40,6 +45,11 @@ const Farewell = () => {
         <>  
             <div className="farewell">
                 <p>Muchas gracias por tu tiempo, tu opinión es muy valiosa para nosotros</p>
+                { showButton && (
+                    <Link to="/" className="button go-home-button fade-in">
+                        Volver a la página principal
+                    </Link>
+                )}
             </div>
 
             <div className="flying-overlay">
