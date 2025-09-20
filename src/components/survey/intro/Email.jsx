@@ -7,7 +7,7 @@ const Email = () => {
     const [error, setError] = useState('')
 
     const validateEmail = (value) => {
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const regex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
         return regex.test(value);
     }
 

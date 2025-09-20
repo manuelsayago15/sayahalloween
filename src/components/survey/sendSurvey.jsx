@@ -17,7 +17,7 @@ const SendSurvey = () => {
                 Object.entries(userInfo).filter(([k, v]) => v.trim() !== "")
             )
 
-            const docRef = await addDoc(collection(db, "tests"), {
+            const docRef = await addDoc(collection(db, "responses"), {
                 user: filteredUserInfo,
                 answers,
                 createdAt: serverTimestamp(),
