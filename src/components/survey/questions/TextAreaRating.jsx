@@ -5,8 +5,8 @@ const TextAreaRating = ({ questionId, islastQuestion }) => {
     const answers = useFormStore((state) => state.answers)
 
     const currentText = answers[questionId]?.text || ''
-    console.log('currentText', currentText)
-    console.log('questionId', questionId)
+    //console.log('currentText', currentText)
+    //console.log('questionId', questionId)
 
     const handleChange = (e) => {
         const value = e.target.value;
