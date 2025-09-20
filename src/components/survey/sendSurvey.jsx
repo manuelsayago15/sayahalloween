@@ -23,7 +23,7 @@ const SendSurvey = () => {
                 createdAt: serverTimestamp(),
             })
 
-            console.log("Encuesta enviada con ID: ", docRef.id)
+            //console.log("Encuesta enviada con ID: ", docRef.id)
 
             setisSubmmited(true)
         } catch (e) {
