@@ -50,7 +50,8 @@ const Home = () => {
         <div className="hero-content">
           <h1>¡Bienvenidos a SayaHalloween 2025!</h1>
           <p>La fiesta de disfraces más épica del año 🎃🕷️</p>
-
+          <h2>Viernes 31 de Octubre</h2>
+          
           {/* Countdown */}
           <div className="countdown">
             <span>{timeLeft.days}d</span> :
