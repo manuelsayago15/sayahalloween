@@ -33,7 +33,7 @@ const Email = () => {
                 value={userInfo.email}
                 onChange={handleChange}
             />
-            <p>Deja tu correo si deseas recibir noticias de los próximos eventos.</p>
+            <p>Deja tus datos si deseas recibir noticias de los próximos eventos.</p>
             { error && <p style={{ color: 'red', fontSize: '0.9rem' }}> {error} </p>}
         </div>
     )
