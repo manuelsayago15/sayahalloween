@@ -4,18 +4,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   background-color: rgba(0,0,0,0.7); /* semitransparente sobre video */
-  color: white;
+  color: #ffffff;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* Mobile base */
@@ -36,7 +41,7 @@
 }
 
 .nav-links li a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -65,7 +70,10 @@
   position: relative;
   text-align: center;
   background-color: #000;
-  color: white;
+  color: #ffffff;
+  background-image: url('/images/hero-poster-mobile.png');
+  background-size: cover;
+  background-position: center 75%;
 }
 
 .overlay {
@@ -93,6 +101,15 @@
   margin-bottom: 2rem;
 }
 
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .countdown {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
@@ -100,6 +117,7 @@
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  margin-top: 3rem;
 }
 
 .btn-primary {
@@ -107,7 +125,7 @@
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
   background: linear-gradient(90deg, #ff7f50, #ffa500);
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
@@ -117,7 +135,7 @@
 
 .btn-buy-tickets {
   background: linear-gradient(90deg, #ff7f50, #ffa500);
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;
@@ -137,6 +155,24 @@
   100% { transform: scale(1); }
 }
 
+.go-down-icon {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce-down 1.5s infinite ease-in-out;
+  width: 40px;
+}
+
+@keyframes bounce-down {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(12px);
+  }
+}
+
 /* Entradas Section */
 .tickets {
   min-height: 50vh;
@@ -147,7 +183,7 @@
   text-align: center;
   padding: 4rem 1rem;
   background: #111;
-  color: white;
+  color: #ffffff;
 }
 
 .tickets h2 {
@@ -156,7 +192,7 @@
 }
 
 .tickets p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
@@ -174,7 +210,7 @@
 
 .ticket-card {
   background: #222;
-  color: white;
+  color: #ffffff;
   padding: 2rem 1.5rem;
   border-radius: 0.5rem;
   max-width: 280px;
@@ -190,10 +226,15 @@
 
 .ticket-card h3 {
   margin-bottom: 1rem;
+  font-size: 1.4rem;
 }
 
 .ticket-card p {
   margin-bottom: 1.5rem;
+}
+
+.ticket-card p:nth-child(3) {
+  font-size: 1.8rem
 }
 
 /* Cards Section */
@@ -216,7 +257,7 @@
 }
 
 .card {
-  background: white;
+  background: #ffffff;
   padding: 2rem 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -247,7 +288,7 @@
 /* Faqs Contenedor general */
 .faq-accordion {
   background: #111; /* fondo oscuro */
-  color: white;
+  color: #ffffff;
   padding: 2rem 1rem;
   border-radius: 0.5rem;
   max-width: 800px;
@@ -268,7 +309,7 @@
 .faq-question {
   width: 100%;
   background: #1a1a1a;
-  color: white;
+  color: #ffffff;
   padding: 1rem;
   text-align: left;
   font-size: 1.1rem;
@@ -319,7 +360,7 @@
 .faq-answer {
   font-size: 1rem;
   line-height: 1.5;
-  color: #fff;
+  color: #ffffff;
 }
 
 
@@ -328,7 +369,7 @@
   padding: 2rem 1rem;
   text-align: center;
   background: #111;
-  color: white;
+  color: #ffffff;
 }
 
 /* ---------------- Responsive (desktop up) ---------------- */
@@ -344,6 +385,11 @@
 
   .menu-toggle {
     display: none;
+  }
+
+  .hero {
+    background-image: url('/images/hero-poster-desktop.png');
+    background-position: center;
   }
 
   .hero h1 {
