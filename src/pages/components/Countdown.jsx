@@ -7,7 +7,7 @@ const Countdown = () => {
 
     useEffect(() => {
         // Countdown
-        const eventDate = new Date('2025-10-31T20:00:00'); // fecha de la fiesta
+        const eventDate = new Date('2025-10-31T19:00:00'); // fecha de la fiesta
         const interval = setInterval(() => {
         const now = new Date();
         const diff = eventDate - now;
