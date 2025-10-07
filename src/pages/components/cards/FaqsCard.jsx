@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-const Faqs = () => {
+const FaqsCard = () => {
     return (
-        <Link to="/faqs" className="faqs-link">
+        <Link to="/faqs" className="cards-link">
             <div className="card">
                 <h3>FAQs</h3>
                 <p>Resolvemos todas tus dudas antes del evento.</p>
@@ -10,4 +10,4 @@ const Faqs = () => {
     )
 }
 
-export default Faqs
+export default FaqsCard
