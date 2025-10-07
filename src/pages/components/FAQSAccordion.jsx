@@ -59,32 +59,30 @@ const FAQSAccordion = () => {
   return (
     <>
     <div className="home-container">
-
-      <Navbar />
-    <div className="hero">
-    <div className="overlay"></div>
-      <div className="faq-accordion hero-content">
-        {faqs.map((faq, index) => (
-          <div key={index} className="faq-item">
-            <button
-              className={`faq-question ${activeIndex === index ? "active" : ""}`}
-              onClick={() => toggleFAQ(index)}
-              >
-              {faq.q}
-              <span className="faq-icon">{activeIndex === index ? "−" : "+"}</span>
-            </button>
-            <div
-              className={`faq-answer-wrapper ${
-                activeIndex === index ? "open" : ""
-              }`}
-              >
-              <p className="faq-answer">{faq.a}</p>
+      <div className="hero">
+      <div className="overlay"></div>
+        <div className="faq-accordion hero-content">
+          {faqs.map((faq, index) => (
+            <div key={index} className="faq-item">
+              <button
+                className={`faq-question ${activeIndex === index ? "active" : ""}`}
+                onClick={() => toggleFAQ(index)}
+                >
+                {faq.q}
+                <span className="faq-icon">{activeIndex === index ? "−" : "+"}</span>
+              </button>
+              <div
+                className={`faq-answer-wrapper ${
+                  activeIndex === index ? "open" : ""
+                }`}
+                >
+                <p className="faq-answer">{faq.a}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-        </div>
-        </div>
+    </div>
     </>
   )
 }

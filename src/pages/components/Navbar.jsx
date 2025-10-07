@@ -9,10 +9,11 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="logo"><Link to="/">SayaHalloween</Link></div>
                 <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-                    <li><a href="#home" onClick={() => setMenuOpen(false)}>Inicio</a></li>
-                    <li><a href="#tickets" onClick={() => setMenuOpen(false)}>Entradas</a></li>
-                    <li><a href="#activities" onClick={() => setMenuOpen(false)}>Actividades</a></li>
-                    <li><a href="#faqs" onClick={() => setMenuOpen(false)}>FAQs</a></li>
+                    <li><Link to="/#home" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
+                    <li><Link to="/#tickets" onClick={() => setMenuOpen(false)}>Entradas</Link></li>
+                    <li><Link to="/#activities" onClick={() => setMenuOpen(false)}>Actividades</Link></li>
+                    <li><Link to="/organizers" onClick={() => setMenuOpen(false)}>Organizadores</Link></li>
+                    <li><Link to="/faqs" onClick={() => setMenuOpen(false)}>FAQs</Link></li>
                 </ul>
             <div className="menu-toggle" onClick={toggleMenu}>&#9776;</div>
         </nav>
