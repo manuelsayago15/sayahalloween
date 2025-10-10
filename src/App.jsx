@@ -9,6 +9,7 @@ import ItineraryView from './pages/components/views/ItineraryView'
 import MainLayout from './pages/components/MainLayout'
 import NoLayout from './pages/components/NoLayout'
 import Organizers from './pages/components/Organizers'
+import Gallery from './pages/components/Gallery'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/faqs" element={<FaqsView />} />
           <Route path="/prizes" element={<PrizeView />} />
           <Route path="/activities" element={<ActivitiesView />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/organizers" element={<Organizers />} />
         </Route>
 

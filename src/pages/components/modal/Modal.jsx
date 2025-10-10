@@ -12,7 +12,6 @@ const Modal = ({ isOpen, onClose, ticketType }) => {
                 <button className="modal-close" onClick={onClose}>✖</button>
                     <h3>🧛‍♀️ Ya casi! 🎃</h3>
                     <h3>Compra tu entrada ({ticketType})</h3>
-                    <p className="modal-text">En Fintoc podrás:</p>
                     <ol className="modal-steps">
                         <li>Copiar los datos y transferir desde tu banco 
                             <em> (no olvides mandar el comprobante por WhatsApp)</em>.

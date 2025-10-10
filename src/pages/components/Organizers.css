@@ -32,8 +32,8 @@
 /* Cards */
 .organizer-card {
   background-color: #1a1a1a;
-  padding: 1.5rem;
-  border-radius: 0.2rem;
+  padding: 1.5rem 1.5rem 2.5rem;
+  border-radius: 1.8rem;
   width: 280px;
   text-align: center;
   box-shadow: 0 0 15px rgba(255, 117, 24, 0.3);

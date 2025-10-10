@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import Modal from "./Modal"
+import Modal from "./modal/Modal"
 
 const Tickets = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,15 +19,15 @@ const Tickets = () => {
             <div className="tickets-cards">
                 <div className="ticket-card">
                     <h3>Preventa</h3>
-                    <p>Acceso al evento, entrada más barata + regalos exclusivos</p>
+                    <p>Acceso al evento + regalos exclusivos</p>
                     <p><strong>$6.000</strong></p>
-                    <a className="btn-buy-tickets" onClick={() => handleModalTicket("preventa")}>Comprar Ahora</a>
+                    <button className="btn-buy-tickets" onClick={() => handleModalTicket("preventa")}>Comprar Ahora</button>
                 </div>
                 <div className="ticket-card">
                     <h3>General</h3>
-                    <p>Acceso al evento, bebidas y pasapalos incluidos</p>
+                    <p>Acceso al evento</p>
                     <p><strong>$8.000</strong></p>
-                    <button className="btn-buy-tickets disabled-button" onClick={() => handleModalTicket("general")}>Comprar Ahora</button>
+                    <button className="btn-buy-tickets disabled-buy-button" disabled onClick={() => handleModalTicket("general")}>No disponible</button>
                 </div>
                 <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} ticketType={ticketType}/>
             </div>
