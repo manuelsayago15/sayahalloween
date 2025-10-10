@@ -13,6 +13,7 @@ const Navbar = () => {
                     <li><Link to="/#tickets" onClick={() => setMenuOpen(false)}>Entradas</Link></li>
                     <li><Link to="/#activities" onClick={() => setMenuOpen(false)}>Actividades</Link></li>
                     <li><Link to="/organizers" onClick={() => setMenuOpen(false)}>Organizadores</Link></li>
+                    <li><Link to="/gallery" onClick={() => setMenuOpen(false)}>Galería</Link></li>
                     <li><Link to="/faqs" onClick={() => setMenuOpen(false)}>FAQs</Link></li>
                 </ul>
             <div className="menu-toggle" onClick={toggleMenu}>&#9776;</div>

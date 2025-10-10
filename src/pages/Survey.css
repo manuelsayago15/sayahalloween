@@ -162,10 +162,10 @@ input:focus {
   background-color: #E0E0E0;
 }
 
-footer {
+.footer-survey {
   padding: 1rem;
   font-size: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   /* margin-top: 1rem; */
 }
 
@@ -400,7 +400,7 @@ textarea {
     margin-bottom: 2rem;
   }
 
-  footer {
+  .footer-survey {
     font-size: 0.8rem;
   }
 
@@ -469,7 +469,7 @@ textarea {
     margin-bottom: 3rem;
   }
 
-  footer {
+  .footer-survey {
     font-size: 1rem;
   }
 
@@ -611,7 +611,7 @@ textarea {
     width: 40%;
   }
 
-  footer {
+  .footer-survey {
     margin-bottom: 0;
   }
 }
@@ -634,7 +634,7 @@ textarea {
     margin-top: 2rem;
   }
 
-  footer {
+  .footer-survey {
     margin-top: 5rem;
   }
 
