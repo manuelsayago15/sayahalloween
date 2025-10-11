@@ -1,4 +1,4 @@
-.gallery-preview {
+/* .gallery-preview {
   padding: 3rem 1.5rem;
   background: #0d0d0d;
   text-align: center;
@@ -69,4 +69,73 @@
 
 .see-more-btn:hover {
   background: #e05500;
+} */
+
+.gp-section {
+  padding: 3rem 1.5rem;
+  background: #0d0d0d;
+  text-align: center;
+}
+
+.gp-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.gp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.gp-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gp-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gp-item:hover img {
+  transform: scale(1.1);
+}
+
+.gp-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gp-item:hover .gp-overlay {
+  opacity: 1;
+}
+
+.gp-see-more {
+  margin-top: 2rem;
+}
+
+.gp-see-more-btn {
+  all: unset;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #ff7f50, #ffa500);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.gp-see-more-btn:hover {
+  background: #e05500;
+  transform: scale(1.05);
 }
