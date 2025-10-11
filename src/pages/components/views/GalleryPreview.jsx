@@ -2,33 +2,33 @@ import { Link } from "react-router-dom"
 import "./GalleryPreview.css"
 
 const images = [
-  "/images/gallery1.jpg",
-  "/images/gallery2.jpg",
-  "/images/gallery3.jpg",
-  "/images/gallery4.jpg",
-  "/images/gallery5.jpg",
-  "/images/gallery6.jpg"
+  "/images/galleryPreview/gallery1.jpg",
+  "/images/galleryPreview/gallery2.jpg",
+  "/images/galleryPreview/gallery3.jpg",
+  "/images/galleryPreview/gallery4.jpg",
+  "/images/galleryPreview/gallery5.jpg",
+  "/images/galleryPreview/gallery6.jpg"
 ]
 
 const GalleryPreview = () => {
   return (
-    <section className="gallery-preview">
-      <h2 className="gallery-title">Revive el SayaHalloween 🎃</h2>
+    <section className="gp-section">
+      <h2 className="gp-title">Revive el SayaHalloween 🎃</h2>
 
-      <div className="gallery-grid">
+      <div className="gp-grid">
         {images.map((src, i) => (
-          <div key={i} className="gallery-item">
+          <div key={i} className="gp-item">
             <img src={src} alt={`Foto ${i + 1} SayaHalloween`} />
-            <div className="overlay">
+            <div className="gp-overlay">
               {/* <span>👻 SayaHalloween</span> */}
             </div>
           </div>
         ))}
       </div>
 
-      <div className="see-more">
+      <div className="gp-see-more">
         <Link to="/gallery">
-        <button className="see-more-btn">
+        <button className="gp-see-more-btn">
           Ver más fotos
         </button>
         </Link>
