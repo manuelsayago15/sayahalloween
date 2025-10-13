@@ -21,7 +21,7 @@ const organizers = [
 
 const Organizers = () => {
   return (
-    <div className="organizers-container">
+    <section className="organizers-container" id="organizers">
       <h1 className="organizers-title">Conoce a los Organizadores</h1>
       <p className="organizers-intro">
         El SayaHalloween nació en 2021 como una fiesta de Halloween convencional, y con el
@@ -43,7 +43,7 @@ const Organizers = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

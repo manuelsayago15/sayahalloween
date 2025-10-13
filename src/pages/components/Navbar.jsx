@@ -12,7 +12,7 @@ const Navbar = () => {
                     <li><Link to="/#home" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
                     <li><Link to="/#tickets" onClick={() => setMenuOpen(false)}>Entradas</Link></li>
                     <li><Link to="/#activities" onClick={() => setMenuOpen(false)}>Contenido</Link></li>
-                    <li><Link to="/organizers" onClick={() => setMenuOpen(false)}>Organizadores</Link></li>
+                    <li><Link to="/#organizers" onClick={() => setMenuOpen(false)}>Organizadores</Link></li>
                     <li><Link to="/gallery" onClick={() => setMenuOpen(false)}>Galería</Link></li>
                     <li><Link to="/faqs" onClick={() => setMenuOpen(false)}>FAQs</Link></li>
                 </ul>
