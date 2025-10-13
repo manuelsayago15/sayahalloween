@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import './Home.css';
-import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Tickets from './components/Tickets';
 import Cards from './components/cards/Cards';
+import Organizers from './components/Organizers';
 
 const Home = () => {
 
@@ -14,6 +14,8 @@ const Home = () => {
       <Tickets />
 
       <Cards />
+
+      <Organizers />
     </>
   )
 }
