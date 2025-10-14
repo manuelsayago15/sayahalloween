@@ -27,7 +27,7 @@
 .nav-links {
   display: none;
   flex-direction: column;
-  gap: 1rem;
+  gap: 5rem;
   position: absolute;
   top: 100%;
   right: 0;
@@ -279,7 +279,6 @@
   padding: 2rem 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  flex: 1 1 250px;
   max-width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -358,6 +357,11 @@
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+  }
+
+  .card {
+    max-height: 250px;
+    max-width: 350px;
   }
 
   .tickets h2 {

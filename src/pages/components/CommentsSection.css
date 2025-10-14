@@ -1,0 +1,110 @@
+.comments-section {
+  padding: 4rem 1rem;
+  background: #0e0e0e;
+  color: #fff;
+  text-align: center;
+}
+
+.comments-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ff7518;
+  text-shadow: 0 0 6px rgba(255, 117, 24, 0.7);
+}
+
+.comments-intro {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+/* === Carrusel horizontal === */
+.comments-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comment-card {
+  flex: 0 0 280px; /* ancho fijo de cada card */
+  scroll-snap-align: start;
+  background: #1a1a1a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 200px; /* altura máxima */
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0; /* comienza invisible, se hace fade-in */
+}
+
+.comment-text {
+  overflow-y: auto; /* scroll si el texto es demasiado largo */
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.comment-user {
+  font-size: 0.85rem;
+  color: #ff7518;
+  text-align: right;
+}
+
+.comments-empty {
+  color: #888;
+}
+
+/* Fade-in animación */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ocultar scroll en Webkit pero mantener scroll funcional */
+.comments-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.comments-container::-webkit-scrollbar-thumb {
+  background: #ff7518;
+  border-radius: 3px;
+}
+
+.comments-container::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.comments-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.comments-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
+
+/* === Responsive === */
+@media (max-width: 599px) {
+  .comment-card {
+    flex: 0 0 220px;
+    max-height: 180px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .comment-card {
+    flex: 0 0 250px;
+    max-height: 190px;
+  }
+}

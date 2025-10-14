@@ -27,12 +27,11 @@ const GalleryPreview = () => {
       </div>
 
       <div className="gp-see-more">
-        <Link to="/gallery">
-        <button className="gp-see-more-btn">
+        <Link to="/gallery" className="gp-see-more-btn">
           Ver más fotos
-        </button>
         </Link>
       </div>
+
     </section>
   )
 }

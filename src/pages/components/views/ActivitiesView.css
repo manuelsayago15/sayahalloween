@@ -76,4 +76,29 @@
   font-size: 0.9rem;
   color: #999;
   margin-top: 1rem;
+  margin-bottom: 5rem;
 }
+
+.contest-rules {
+  border-top: 2px solid #ff7518;
+  padding: 2rem 3rem 3rem;
+  line-height: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contest-rules h3 {
+  color: #ffb347;
+  margin-bottom: 1rem;
+}
+
+.contest-rules ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* .contest-rules ol {
+    margin-left: 2rem;
+    padding-left: 1.5rem;
+} */

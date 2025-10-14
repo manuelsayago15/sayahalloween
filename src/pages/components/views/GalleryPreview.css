@@ -124,18 +124,20 @@
 
 .gp-see-more-btn {
   all: unset;
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  border-radius: 0.5rem;
   background: linear-gradient(90deg, #ff7f50, #ffa500);
-  color: #fff;
+  color: #ffffff !important;
   font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  transition: transform 0.3s, box-shadow 0.3s;
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  text-align: center;
+  width: 130px;
 }
 
 .gp-see-more-btn:hover {
-  background: #e05500;
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(255, 165, 0, 0.6);
 }

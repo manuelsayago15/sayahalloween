@@ -41,11 +41,35 @@ const ActivitiesView = () => {
             <div className="prizes-preview">
                 <h3>🏆 Premios destacados</h3>
                 <ul>
-                <li>🥇 Trofeo 1° lugar competencia de disfraces - SayaHalloween 2025</li>
+                <li>🥇 Trofeo 1° lugar competencia de disfraces</li>
                 <li>🎖️ Medallones para el 2° y 3° lugar del concurso de disfraces</li>
                 <li>🎁 Premios sorpresa para los más participativos</li>
                 </ul>
                 <p className="note">*Más premios se revelarán durante la noche*</p>
+            </div>
+
+            <div className="contest-rules">
+                <h3> 🎭 Bases del Concurso de Disfraces </h3>
+                <ul>
+                    <li>¡Demuestra tu lado más oscuro, creativo o divertido! 💀✨ Cada participante deberá interpretar a su personaje en una presentación de máximo <strong>30 segundos</strong>.</li>
+                    <li>Puedes incluir música de fondo (previa coordinación con los organizadores) y realizar una breve actuación, por ejemplo, 🎙️ decir una línea, 💃 bailar, o simplemente encarnar la esencia de tu personaje.</li>
+                    <li>
+                        El jurado evaluará tres aspectos:
+                        <ol>
+                            <li>
+                                🧵 Diseño y elaboración del disfraz
+                            </li>
+                            <li>
+                                🕺 Performance (actitud, energía y coherencia con el personaje)
+                            </li>
+                            <li>
+                                👁️ Presencia escénica
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Cada categoría será evaluada en una escala del 1 al 10.</li>
+                    <li>Al finalizar, se sumarán los puntajes para determinar a los ganadores. 🏆</li>
+                </ul>
             </div>
         </section>
     )

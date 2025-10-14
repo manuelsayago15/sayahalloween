@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import Tickets from './components/Tickets';
 import Cards from './components/cards/Cards';
 import Organizers from './components/Organizers';
+import CommentsSection from './components/CommentsSection';
 
 const Home = () => {
 
@@ -16,6 +17,8 @@ const Home = () => {
       <Cards />
 
       <Organizers />
+
+      <CommentsSection />
     </>
   )
 }
