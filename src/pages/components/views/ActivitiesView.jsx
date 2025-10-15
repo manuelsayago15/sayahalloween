@@ -11,7 +11,7 @@ const ActivitiesView = () => {
 
             <div className="activities-grid">
                 <div className="activity-card">
-                    <h3>🦇💀🧛‍♂️ Concurso de disfraces 🧙‍♀️🧟‍♂️🧝‍♀️ </h3>
+                    <h3>💀 Concurso de disfraces</h3>
                     <p>
                         ¡Participa en el concurso más esperado de la noche! Los disfraces más creativos, 
                         aterradores o cool serán premiados por el jurado del <strong>SayaHalloween</strong>.
@@ -57,13 +57,13 @@ const ActivitiesView = () => {
                         El jurado evaluará tres aspectos:
                         <ol>
                             <li>
-                                🧵 Diseño y elaboración del disfraz
+                                🧵 <strong>Diseño y elaboración del disfraz</strong>
                             </li>
                             <li>
-                                🕺 Performance (actitud, energía y coherencia con el personaje)
+                                🕺 <strong>Performance (actitud, energía y coherencia con el personaje)</strong>
                             </li>
                             <li>
-                                👁️ Presencia escénica
+                                👁️ <strong>Presencia escénica</strong>
                             </li>
                         </ol>
                     </li>

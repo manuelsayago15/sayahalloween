@@ -28,8 +28,7 @@ const HeroSection = () => {
             </video>
             <div className="overlay"></div>
                 <div className="hero-content">
-                    <h1>La fiesta de disfraces más épica del año 🎃🕷️</h1>
-                    {/* <p>La fiesta de disfraces más épica del año 🎃🕷️</p> */}
+                    <h1>La fiesta de disfraces más épica del año 🎃👻</h1>
                     {/* <h2>Viernes 31 de Octubre</h2> */}
                     <h2>Fecha por confirmar</h2>
                     <h2>7:00 PM</h2>
