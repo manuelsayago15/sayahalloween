@@ -27,7 +27,7 @@
 .nav-links {
   display: none;
   flex-direction: column;
-  gap: 5rem;
+  gap: 2rem;
   position: absolute;
   top: 100%;
   right: 0;
@@ -326,7 +326,7 @@
   .nav-links {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3.5rem;
     position: static;
     background: transparent;
     padding: 0;
