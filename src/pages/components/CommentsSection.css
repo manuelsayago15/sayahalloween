@@ -85,13 +85,13 @@
   background: #222;
 }
 
-.comments-container {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+/* .comments-container {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 .comments-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari y Opera */
-}
+  display: none;
+} */
 
 
 /* === Responsive === */

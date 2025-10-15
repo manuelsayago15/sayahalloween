@@ -109,26 +109,6 @@
   animation: fadeIn 0.4s ease;
 }
 
-.modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: #ff7518;
-  border: none;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 1.2rem;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(255, 117, 24, 0.6);
-  transition: background 0.3s;
-}
-
-.modal-close:hover {
-  background: #e05500;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
