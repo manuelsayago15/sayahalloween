@@ -18,6 +18,21 @@ a:visited {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'Shlop';
+  src: url('/src/assets/fonts/Shlop.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo a {
+  font-family: 'Shlop';
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #000;
+}
+
+
 .modal-close {
   position: absolute;
   top: 0.5rem;

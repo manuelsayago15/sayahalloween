@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <div className="logo"><Link to="/">SayaHalloween</Link></div>
+                <div className="logo"><Link to="/">SayaHalloween</Link></div>
                 <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
                     <li><Link to="/#home" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
                     <li><Link to="/#tickets" onClick={() => setMenuOpen(false)}>Entradas</Link></li>

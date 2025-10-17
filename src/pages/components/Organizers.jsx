@@ -7,14 +7,14 @@ const organizers = [
     name: "El Saya",
     role: "Fundador & Productor General",
     description:
-      "Creador de SayaHalloween, apasionado por Halloween, la música y la cultura geek. Se encarga de la logística, los concursos y la experiencia completa.",
+      "Creador de SayaHalloween, apasionado por la tecnología, las fiestas, la música, el cosplay y la cultura geek. Se encarga de la logística, los concursos y la experiencia completa del evento.",
     photo: "/images/organizers/saya.jpg",
   },
   {
     name: "La Guaricha",
     role: "Directora Creativa",
     description:
-      "Responsable de la decoración, ambientación y la estética visual del evento. Fanática del cosplay y las manualidades terroríficas.",
+      "Responsable de la decoración, ambientación, logística y la estética visual del evento. Fanática de múltiples géneros musicales, maquillaje, cosplay, cultura geek en general y las manualidades terroríficas.",
     photo: "/images/organizers/guaricha.jpg",
   },
 ]
@@ -25,8 +25,8 @@ const Organizers = () => {
       <h1 className="organizers-title">Conoce a los Organizadores</h1>
       <p className="organizers-intro">
         El SayaHalloween nació en 2021 como una fiesta de Halloween convencional, y con el
-        tiempo se transformó en un evento especial lleno de mucha creatividad,
-        concursos, trivias y diversión. Detrás del proyecto somos dos personas que nos encanta lanzar las mejores fiestas de Halloween, amamos la música y diferentes estilos de la cultura pop/geek.
+        tiempo se transformó en un evento súper especial lleno de mucha creatividad,
+        concursos, trivias y entretenimiento de calidad. Detrás del proyecto somos dos personas que nos encanta lanzar las mejores fiestas ever, amamos la música, diferentes estilos de la cultura pop/geek y, por supuesto, la diversión.
       </p>
 
       <div className="organizers-list">
