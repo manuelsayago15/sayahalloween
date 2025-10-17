@@ -170,7 +170,7 @@
 
 .go-down-icon {
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
   animation: bounce-down 1.5s infinite ease-in-out;

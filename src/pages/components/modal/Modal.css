@@ -73,6 +73,26 @@
   text-align: start;
 }
 
+
+/* Scrollbar en navegadores WebKit (Chrome, Edge, Safari) */
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #ffb366; /* naranja Halloween */
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background-color: #ff9f33; /* tono más claro al hover */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
 /* --- Responsive --- */
 
 @media screen and (min-width: 350px) {
