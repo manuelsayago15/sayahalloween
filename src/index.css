@@ -20,7 +20,7 @@ a:visited {
 
 @font-face {
   font-family: 'Shlop';
-  src: url('/src/assets/fonts/Shlop.otf') format('truetype');
+  src: url('/fonts/shlop.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
