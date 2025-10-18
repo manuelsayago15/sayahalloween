@@ -21,13 +21,13 @@ const Tickets = () => {
                     <h3>Preventa</h3>
                     <p>Acceso al evento + regalos exclusivos</p>
                     <p><strong>$6.000</strong></p>
-                    <button className="btn-buy-tickets" onClick={() => handleModalTicket("preventa")}>Comprar Ahora</button>
+                    <button className="btn-buy-tickets disabled-buy-button" disabled onClick={() => handleModalTicket("preventa")}>AGOTADAS</button>
                 </div>
                 <div className="ticket-card">
                     <h3>General</h3>
                     <p>Acceso al evento</p>
                     <p><strong>$8.000</strong></p>
-                    <button className="btn-buy-tickets disabled-buy-button" disabled onClick={() => handleModalTicket("general")}>No disponible</button>
+                    <button className="btn-buy-tickets" onClick={() => handleModalTicket("general")}>Comprar Ahora</button>
                 </div>
                 <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} ticketType={ticketType}/>
             </div>
