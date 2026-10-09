@@ -20,7 +20,6 @@ const CommentsSection = () => {
             const data = doc.data();
             // Accedemos al texto libre del survey (última pregunta)
             const lastAnswer = data.answers?.q8?.text || "";
-            console.log(lastAnswer)
             return {
               id: doc.id,
               user: "Anónimo",

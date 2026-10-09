@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "./Itinerary.css";
-import Navbar from "../Navbar";
 import GalleryPreview from "./GalleryPreview";
 
 const itineraryData = [
