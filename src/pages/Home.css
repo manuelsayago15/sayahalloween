@@ -71,7 +71,7 @@
   text-align: center;
   background-color: #000;
   color: #ffffff;
-  background-image: url('/images/hero-poster-mobile.png');
+  background-image: url('/images/hero-poster-mobile.webp');
   background-size: cover;
   background-position: center 75%;
 }
@@ -337,7 +337,7 @@
   }
 
   .hero {
-    background-image: url('/images/hero-poster-desktop.png');
+    background-image: url('/images/hero-poster-desktop.webp');
     background-position: center;
   }
 
