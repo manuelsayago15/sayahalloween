@@ -28,13 +28,13 @@ const HeroSection = () => {
             </video>
             <div className="overlay"></div>
                 <div className="hero-content">
-                    <h1>La fiesta de disfraces más épica del año 🎃👻</h1>
-                    <h2>Viernes 31 de Octubre</h2>
-                    <h2>7:00 PM</h2>
+                    <h1>La fiesta más esperada del año 🎃👻</h1>
+                    <h2>Viernes 30 de Octubre</h2>
+                    <h2>6:30 PM</h2>
                     
                     <Countdown />
 
-                    <a href="#tickets" className="btn-primary">Comprar Entradas</a>
+                    <a href="#tickets" className="btn-primary">Compra tus entradas aquí</a>
 
 
                 </div>
