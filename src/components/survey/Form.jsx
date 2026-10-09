@@ -61,7 +61,7 @@ const Form = () => {
             </section>
            { !islastQuestion && <NextButton questionId={question.id} /> }
            { !showIntro && islastQuestion && !isSubmmited && <SendSurvey /> }
-            <footer className='footer-survey'>© 2025 SayaHalloween. Todos los derechos reservados.</footer>
+            <footer className='footer-survey'>© {new Date().getFullYear()} SayaHalloween. Todos los derechos reservados.</footer>
         </>
     )
 }

@@ -7,7 +7,7 @@ const faqs = [
     q: "¿Qué incluye la entrada general?",
     a: [
       "El valor de la entrada general cubre todos los pasapalos, bebidas, snacks y dulces seleccionados a partir de sus respuestas en esta ",
-      { type: "link", text: "encuesta", href: "https://forms.gle/1JceKzAV7EJwW3rW6" },
+      { type: "link", text: "encuesta", href: "https://forms.gle/gCyYX2Nx2TgYEtvP6" },
       ", además de los premios de cada dinámica, la ambientación tenebrosa y la música en vivo de nuestro DJ ",
       { type: "link", text: "@hypnosisproducciones", href: "https://www.instagram.com/hypnosisproducciones/" },
       " ¡Y puede que haya más sorpresas durante la noche!"
@@ -17,7 +17,7 @@ const faqs = [
     q: "No me decido si quiero ir, ¿hasta qué día tengo para comprar entradas?",
     a: [
       "Las entradas son limitadas y estarán disponibles ",
-      { type: "bold", text: "desde el 17 de octubre hasta el 27 de octubre" },
+      { type: "bold", text: "desde el 10 de Octubre hasta el 28 de Octubre" },
       ". ¡No lo pienses demasiado! Se agotan rápido y después solo te quedará el ",
       { type: "bold", text: "FOMO" },
       " viendo las fotos."
@@ -31,7 +31,7 @@ const faqs = [
     q: "¿A qué hora debo llegar?",
     a: [
       "El ",
-      { type: "bold", text: "evento empieza a las 7:00 pm y termina a las 2:00 am" },
+      { type: "bold", text: "evento empieza a las 6:30 pm y termina a las 2:00 am" },
       ". Tenemos un cronograma de actividades que arranca puntual, así que si no quieres perderte ninguna actividad y la posibilidad de ganar premios, revisa el ",
       { type: "link", text: "itinerario", href: "/itinerary" },
       " y planifica tu llegada.",
