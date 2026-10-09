@@ -41,7 +41,7 @@ const images = [
   { src: "/images/gallery/photo37.jpg", alt: "Cámara y acción" },
   { src: "/images/gallery/photo38.jpg", alt: "Disfraz aterrador" },
   { src: "/images/gallery/photo39.jpg", alt: "Detalles decorativos" },
-  { src: "/images/gallery/photo19 - 2.jpg", alt: "Fin de la noche" },
+  { src: "/images/gallery/photo40.jpg", alt: "Fin de la noche" },
 ];
 
 const Gallery = () => {
@@ -63,12 +63,12 @@ const Gallery = () => {
           >
             <img
               src={img.src}
-              alt={img.caption}
+              alt={img.alt}
               className="gallery-img"
               loading="lazy"
             />
             <div className="gallery-overlay">
-              <p>{img.caption}</p>
+              <p>{img.alt}</p>
             </div>
           </div>
         ))}
@@ -76,11 +76,11 @@ const Gallery = () => {
 
       {/* Modal */}
       {selectedImage && (
-        <div className="modal" onClick={() => setSelectedImage(null)}>
+        <div className="gallery-modal" onClick={() => setSelectedImage(null)}>
           <img
             src={selectedImage.src}
-            alt={selectedImage.caption}
-            className="modal-img"
+            alt={selectedImage.alt}
+            className="gallery-modal-img"
           />
           <button
             className="modal-close"
