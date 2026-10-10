@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./Itinerary.css";
 import GalleryPreview from "./GalleryPreview";
 
 const itineraryData = [
-  { time: "19:30", title: "Bienvenida y Brindis", icon: "🕯️" },
-  { time: "20:00", title: "Sesión de Fotos", icon: "👻" },
+  { time: "18:30", title: "Bienvenida y Brindis", icon: "🕯️" },
+  { time: "19:30", title: "Sesión de Fotos", icon: "👻" },
   { time: "20:30", title: "Actividades con Premios", icon: "🦇" },
   { time: "22:00", title: "Concurso de disfraces", icon: "🏆" },
-  { time: "23:00", title: "Show", icon: "🎶" },
+  { time: "23:00", title: "¡A BAILAR!", icon: "🎶" },
 ];
 const ItineraryView = () => {
   const cardsRef = useRef([]);
