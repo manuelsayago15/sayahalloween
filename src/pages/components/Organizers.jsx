@@ -8,14 +8,14 @@ const organizers = [
     role: "Fundador & Productor General",
     description:
       "Creador de SayaHalloween, apasionado por la tecnología, las fiestas, la música, el cosplay y la cultura geek. Se encarga de la logística, los concursos y la experiencia completa del evento.",
-    photo: "/images/organizers/saya.jpg",
+    photo: "/images/organizers/saya.jpg?v=2",
   },
   {
     name: "La Guaricha",
     role: "Directora Creativa",
     description:
       "Responsable de la decoración, ambientación, logística y la estética visual del evento. Fanática de múltiples géneros musicales, maquillaje, cosplay, cultura geek en general y las manualidades terroríficas.",
-    photo: "/images/organizers/guaricha.jpg",
+    photo: "/images/organizers/guaricha.jpg?v=2",
   },
 ]
 
