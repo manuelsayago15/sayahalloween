@@ -19,16 +19,16 @@ const ActivitiesView = () => {
                 </div>
 
                 <div className="activity-card">
-                    <h3>🧠 Verdadero o Falso</h3>
+                    <h3>🧠 Verdadero o Falso/Trivia</h3>
                     <p>
                         Demuestra tus conocimientos sobre cultura general, geek, música, matemática, ciencia y cualquier cosa que se le ocurra al Saya 😄.
                     </p>
                 </div>
 
                 <div className="activity-card">
-                    <h3>🦇 Carrera de Vampiros</h3>
+                    <h3>🦇 Búsqueda del cofre maldito</h3>
                     <p>
-                        ¿Quién será el vampiro más rápido de la noche? Compite en la carrera para ganar premios.
+                        ¿Quién descubrirá los secretos de la noche?
                     </p>
                 </div>
 
@@ -51,8 +51,8 @@ const ActivitiesView = () => {
             <div className="contest-rules">
                 <h3> 🎭 Bases del Concurso de Disfraces </h3>
                 <ul>
-                    <li>¡Demuestra tu lado más oscuro, creativo o divertido! 💀✨ Cada participante deberá interpretar a su personaje en una presentación de máximo <strong>30 segundos</strong>.</li>
-                    <li>Puedes incluir música de fondo (previa coordinación con los organizadores) y realizar una breve actuación, por ejemplo, 🎙️ decir una línea, 💃 bailar, o simplemente encarnar la esencia de tu personaje.</li>
+                    <li>¡Demuestra tu lado más oscuro, creativo o divertido! 💀✨ Cada participante deberá interpretar a su personaje en una presentación de máximo <strong>1 min</strong>.</li>
+                    <li>Puedes incluir música de fondo (previa coordinación con los organizadores) y realizar una breve actuación, por ejemplo, 🎙️ recitar un poema, texto, 💃 bailar, o simplemente encarnar la esencia de tu personaje.</li>
                     <li>
                         El jurado evaluará tres aspectos:
                         <ol>
@@ -67,8 +67,9 @@ const ActivitiesView = () => {
                             </li>
                         </ol>
                     </li>
-                    <li>Cada categoría será evaluada en una escala del 1 al 10.</li>
+                    <li>Cada categoría será evaluada minuciosamente</li>
                     <li>Al finalizar, se sumarán los puntajes para determinar a los ganadores. 🏆</li>
+                    <li>Este año el AURA puede ser determinante 😉</li>
                 </ul>
             </div>
         </section>

@@ -13,7 +13,7 @@ const images = [
 const GalleryPreview = () => {
   return (
     <section className="gp-section">
-      <h2 className="gp-title">Revive el SayaHalloween 🎃</h2>
+      <h2 className="gp-title">Revive momentos épicos del SayaHalloween 🎃</h2>
 
       <div className="gp-grid">
         {images.map((src, i) => (

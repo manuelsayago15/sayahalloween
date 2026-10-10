@@ -23,7 +23,7 @@ const images = [
   { src: "/images/gallery/photo59.jpg", alt: "Entrega de premio a Tanjiro" },
   { src: "/images/gallery/photo60.jpg", alt: "Leon de Resident Evil y Akaza" },
   { src: "/images/gallery/photo1.jpg", alt: "Foto grupal de invitados disfrazados" },
-  { src: "/images/gallery/photo2.jpg", alt: "Invitado con los lentes gigantes SayaHalloween" },
+  { src: "/images/gallery/photo2.jpg", alt: "El Saya con los lentes del SayaHalloween" },
   { src: "/images/gallery/photo3.jpg", alt: "Sombrerero Loco y la Reina de Corazones" },
   { src: "/images/gallery/photo4.jpg", alt: "Thor, Loki, la Reina de Corazones y el Sombrerero Loco" },
   { src: "/images/gallery/photo5.jpg", alt: "Los Locos Addams junto a la Reina de Corazones" },
