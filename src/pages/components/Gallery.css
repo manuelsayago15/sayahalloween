@@ -97,7 +97,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 1100;
   padding: 1rem;
 }
 
@@ -117,6 +117,75 @@
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* === Navegación del modal === */
+.gallery-modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #ff7518;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 117, 24, 0.6);
+  transition: background 0.3s;
+}
+
+.gallery-modal-nav:hover {
+  background: #e05500;
+}
+
+.gallery-modal-prev {
+  left: 0.5rem;
+}
+
+.gallery-modal-next {
+  right: 0.5rem;
+}
+
+.gallery-modal-counter {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffb347;
+  font-size: 0.9rem;
+}
+
+/* Pista de swipe: solo en pantallas táctiles, se desvanece sola */
+.gallery-modal-hint {
+  display: none;
+  position: absolute;
+  bottom: 2.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #ffb347;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+@media (hover: none) {
+  .gallery-modal-hint {
+    display: block;
+    animation: galleryHintFade 3s ease forwards;
+  }
+}
+
+@keyframes galleryHintFade {
+  0%, 60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
