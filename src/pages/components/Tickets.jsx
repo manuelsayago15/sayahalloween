@@ -21,7 +21,7 @@ const Tickets = () => {
                     <h3>Preventa</h3>
                     <p>Acceso al evento + regalos exclusivos</p>
                     <p><strong>$6.000</strong></p>
-                    <button className="btn-buy-tickets" onClick={() => handleModalTicket("preventa")}>Comprar Ahora</button>
+                    <button className="btn-buy-tickets disabled-buy-button" disabled onClick={() => handleModalTicket("preventa")}>Comprar Ahora</button>
                 </div>
                 <div className="ticket-card">
                     <h3>General</h3>
