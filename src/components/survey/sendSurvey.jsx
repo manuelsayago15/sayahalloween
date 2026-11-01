@@ -20,6 +20,7 @@ const SendSurvey = () => {
             const docRef = await addDoc(collection(db, "responses"), {
                 user: filteredUserInfo,
                 answers,
+                edition: 2026,
                 createdAt: serverTimestamp(),
             })
 

@@ -42,7 +42,7 @@ const CommentsSection = () => {
     <section className="comments-section" id="comments">
       <h1 className="comments-title">Voces desde el más allá</h1>
       <p className="comments-intro">
-        Estas son algunas de las experiencias y mensajes que dejaron los invitados del SayaHalloween 2024
+        Estas son algunas de las experiencias y mensajes que dejaron los invitados del SayaHalloween
       </p>
 
       <div className="comments-container">
